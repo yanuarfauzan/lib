@@ -21,7 +21,7 @@ public class BookController {
 
     @GetMapping("/get-all-book")
     public ResponseEntity<ResponseData<List<Book>>> getAllBook() {
-        List<Book> books = bookService.getALlBook();
+        List<Book> books = bookService.getAllBook();
         ResponseData<List<Book>> response = new ResponseData<>();
         response.setStatus(true);
         response.getMessage().add("success");
