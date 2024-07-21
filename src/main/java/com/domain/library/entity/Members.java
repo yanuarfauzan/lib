@@ -11,11 +11,13 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
+@Table(name = "members")
 @Data
-public class Member {
+public class Members {
     @Id
     private String id;
     @Column(unique = true)
